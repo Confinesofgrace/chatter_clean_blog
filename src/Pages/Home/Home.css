@@ -1,0 +1,36 @@
+#home-frame
+{
+    padding: 120px 40px 0px 40px;
+
+    /*background-image: url(/src/assets/pexels-veeterzy-303383.jpg);*/
+    background-image: url(/src/assets/running.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: yellow;
+}
+
+#hero
+{
+    width: 60%;
+    padding: 20px 0px;
+}
+
+#get-started
+{
+    padding: 8px 15px;
+
+    margin-top: 30px;
+
+    border: solid 1px;
+    border-color: rgba(248, 247, 248, 0.918);
+    border-radius: 50px;
+
+    background-color: rgba(162, 0, 255, 0.918);
+
+    cursor: pointer;
+
+    font-size: 14px;
+    color: rgba(248, 247, 248, 0.918);
+}

@@ -1,0 +1,36 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Font imported in index.css */
+
+body
+{
+  min-height: 100vh;
+}
+
+/* this property for both Navbars... consider using useState to chage the content of Navbar instead of having 2 Navbars*/
+nav
+{
+    width: 100%;
+    padding: 25px 40px;
+    margin: 0px 0px 4px 0px;
+    background-color: whitesmoke;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
+
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+
+    position: absolute;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}

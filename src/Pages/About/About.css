@@ -1,0 +1,33 @@
+#about-frame
+{
+    
+    width: 100%;
+    
+
+    background-image: url(/src/assets/pexels-veeterzy-303383.jpg);
+    /*background-image: url(/src/assets/running.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    
+}
+
+#about-frame p
+{
+    margin: 30px 0px;
+
+    font-size: 20px;
+}
+
+#about-content
+{
+    width: 100%;
+    
+    padding: 120px 40px 120px 40px;
+
+    
+
+    background-color: rgba(0, 0, 0, 0.39);
+}
