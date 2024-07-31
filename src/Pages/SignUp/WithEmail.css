@@ -1,0 +1,38 @@
+#withEmail-frame
+{
+    padding: 120px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#withEmail-display
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#inputs
+{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 10px 0px;
+}
+
+input
+{
+    padding: 8px;
+    border-style: none;
+    border: solid 1px;
+    border-color: rgba(223, 95, 240, 0.493);
+    border-radius: 10px;
+}

@@ -27,7 +27,7 @@ function Login () {
 
                     <div id='rectangles'>
                         
-                        <Link to="/EmailForm" style= {{display:'flex'}}>
+                        <Link to="/loginwithemail" style= {{display:'flex'}}>
                             <div id='icons'><IoMail size={'20px'}/></div>
                             
                             <div id='proceed-with'>Log in with Email</div>
