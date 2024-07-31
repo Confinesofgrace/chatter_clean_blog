@@ -25,22 +25,24 @@ function Navbar1() {
 
         <div id='nav-center' className={isOpen ? 'open' : ''}>
           <NavLink to="/">
-            <div id='navs'>Home</div>
+            <div id='navs' onClick={toggleNavbar}>Home</div>
           </NavLink>
           <NavLink to="/about">
-            <div id='navs'>About</div>
+            <div id='navs' onClick={toggleNavbar}>About</div>
           </NavLink>
           <NavLink to="/contact">
-            <div id='navs'>Contact</div>
+            <div id='navs' onClick={toggleNavbar}>Contact</div>
           </NavLink>
           <NavLink to="/write">
-            <div id='navs'>Write</div>
+            <div id='navs' onClick={toggleNavbar}>Write</div>
           </NavLink>
           <NavLink to="/login">
-            <div id='navs'>Log In</div>
+            <div id='navs' onClick={toggleNavbar}>Log In</div>
           </NavLink>
           <NavLink to="/signup">
-            <div id='navs' style={{ backgroundColor: 'rgba(162, 0, 255, 0.918)', marginLeft:'8px' }}>Get Started</div>
+            <div id='navs' 
+            onClick={toggleNavbar}
+            style={{ backgroundColor: 'rgba(162, 0, 255, 0.918)', marginLeft:'8px' }}>Get Started</div>
           </NavLink>
         </div>
       </nav>

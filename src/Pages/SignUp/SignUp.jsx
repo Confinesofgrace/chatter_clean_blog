@@ -10,7 +10,7 @@ function SignUp () {
 
             <div id='signup-display'>
 
-                <div style={{fontSize:'50px'}}><p>Join Chatter</p></div>
+                <div style={{fontSize:'50px', marginBottom:'20px'}}><p>Join Chatter</p></div>
                 
                 <div id='signUp-type'>
 
@@ -39,15 +39,15 @@ function SignUp () {
                 </div>
                 
                 <div id="signed-up">
-                    <p>Already have an account?</p>
+                    <p style={{fontSize:'12px'}}>Already have an account?</p>
 
                     <Link to='/login'>
-                        <b style={ {marginLeft: '10px'} }>Log In</b>
+                        <b style={ {marginLeft: '10px', fontSize:'12px'} }>Log In</b>
                     </Link>
                     
                 </div>
 
-                <div id='terms'>Terms and conditions apply.</div>
+                <div style={{fontSize:'12px'}}>Terms and conditions apply.</div>
             
             </div>
         </div>

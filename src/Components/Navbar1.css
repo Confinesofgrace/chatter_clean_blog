@@ -96,9 +96,10 @@
         display: flex;
         justify-content: flex-end;
 
-        width: 85%;
+        width: 35%;
 
         position: absolute;
+        right: 40px;
         margin: 8px 0px;
 
     }
