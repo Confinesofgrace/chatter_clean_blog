@@ -1,7 +1,32 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './LoginWithEmail.css';
+import { useState } from 'react';
+import { auth,app } from '../Firebase/Firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 function LoginWithEmail () {
+
+    const [email, setEmail] = useState ('');
+    const [password, setPassword] = useState ('');
+
+    const login = (e) => {
+        e.preventDefault()
+        
+         signInWithEmailAndPassword (auth, email, password)
+        .then ((userCredential) => {
+            //const user = userCredential.user;
+            afterLogin('/loggedin');
+
+            console.log(userCredential)
+        })
+        .catch((error) => {
+            //const errorCode = error.code;
+            //const errorMessage = error.message;
+            console.log(error)
+        } );
+    }
+
+    const afterLogin = useNavigate();
 
     
     return (
@@ -9,12 +34,24 @@ function LoginWithEmail () {
 
             <div id='LoginWithEmail-dispaly'>
 
-                <form>
+                <form onSubmit={login}>
                     <h2>Log in with your Email</h2>
 
                     <div id='inputs'>
-                        <input type='email' placeholder='johnny@email.com'/>
-                        <input type='password' placeholder='Password'/>
+                        <input 
+                            type='email'  
+                            placeholder='johnny@email.com'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
+
+                        <input 
+                            type='password' 
+                            placeholder='Password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
                     </div>
 
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', }}>
@@ -30,13 +67,13 @@ function LoginWithEmail () {
                                 borderRadius: '10px',
                             }
                         }
-                        > Sign Up</button>
+                        > Log In</button>
                     </div>
 
                     <div style={{ display: 'flex', justifyContent:'center', fontSize: '12px', margin: '10px 0px' }}>
-                        <p>Already have an account?</p>
-                        <Link to='/login'>
-                            <b style={{ marginLeft: '10px' }}>Log In</b>
+                        <p>Don't have an account?</p>
+                        <Link to='/signup'>
+                            <b style={{ marginLeft: '10px' }}>Sign Up</b>
                         </Link>
                     </div>
                     

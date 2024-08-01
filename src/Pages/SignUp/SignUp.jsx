@@ -28,7 +28,7 @@ function SignUp () {
 
                     <div id='rectangles'>
                         
-                        <Link to="/withemail" style= {{display:'flex'}}>
+                        <Link to="/signupwithemail" style= {{display:'flex'}}>
                             <div id='icons'><IoMail size={'20px'}/></div>
                             
                             <div id='proceed-with'>Sign up with Email</div>

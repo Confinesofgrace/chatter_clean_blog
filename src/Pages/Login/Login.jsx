@@ -9,7 +9,7 @@ function Login () {
 
             <div id='login-display'>
 
-                <div style={{fontSize:'50px', marginBottom:'20px'}}><p>Join Chatter</p></div>
+                <div style={{fontSize:'50px', marginBottom:'20px'}}><p>Welcome back</p></div>
                 
                 <div id='login-type'>
 

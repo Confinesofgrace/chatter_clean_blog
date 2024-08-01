@@ -1,44 +1,67 @@
 import { Link } from 'react-router-dom';
-import './WithEmail.css';
+import './SignUpWithEmail.css';
 import { useState } from 'react';
+import { auth,app } from '../Firebase/Firebase';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-function WithEmail () {
 
+function SignUpWithEmail () {
+
+    const [name, setName] = useState ('');
     const [email, setEmail] = useState ('');
     const [password, setPassword] = useState ('');
-    const [confirmPassword, setConfirmPassword]= useState ('');
+    //const [confirmPassword, setConfirmPassword]= useState ('');
 
-    const onSubmit = async (e) => {
+    const signup = (e) => {
         e.preventDefault()
-
-        await createUserWithEmailAndPassword (auth, email, password)
+        
+         createUserWithEmailAndPassword (auth, email, password)
         .then ((userCredential) => {
-            const user = userCredential.user;
-            console.log (user);
+            //const user = userCredential.user;
+            console.log(userCredential)
         })
         .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log (errorCode, errorMessage);
-        } )
+            //const errorCode = error.code;
+            //const errorMessage = error.message;
+            console.log(error)
+        } );
     }
+
 
     return (
         <div id='withEmail-frame'>
             <div id='withEmail-display'>
 
 
-                <form>
+                <form onSubmit={signup}>
                     <h2>Sign Up with your Email</h2>
 
                     <div id='inputs'>
-                        <input type='text' placeholder='Name'/>
-                        <input type='email' placeholder='johnny@email.com'/>
-                        <input type='password' placeholder='Password'/>
+                        <input 
+                            type='text' 
+                            placeholder='Name'
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+
+                        <input 
+                            type='email' 
+                            placeholder='johnny@email.com'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
+                        <input 
+                            type='password' 
+                            placeholder='Password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+
                     </div>
 
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', }}>
-                        <button id='form-btn' type='submit' onClick={onSubmit}
+                        <button id='form-btn' type='submit' 
                         style=
                         {
                             {
@@ -69,4 +92,4 @@ function WithEmail () {
     )
 };
 
-export default WithEmail;
+export default SignUpWithEmail;
