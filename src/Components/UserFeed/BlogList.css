@@ -1,0 +1,18 @@
+#userFeed-nav
+{
+    width: 100%;
+    /*padding: 8px 0px;*/
+
+    display: flex;
+    align-items: center;
+}
+
+#feed
+{
+    padding: 10px;
+    margin: 0px 10px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
