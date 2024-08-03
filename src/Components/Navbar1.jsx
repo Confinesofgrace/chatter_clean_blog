@@ -33,7 +33,7 @@ function Navbar1() {
           <NavLink to="/contact">
             <div id='navs' onClick={toggleNavbar}>Contact</div>
           </NavLink>
-          <NavLink to="/write">
+          <NavLink to="/signUp">
             <div id='navs' onClick={toggleNavbar}>Write</div>
           </NavLink>
           <NavLink to="/login">

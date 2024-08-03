@@ -1,0 +1,40 @@
+#createNewPost-frame
+{
+    padding: 120px 40px;
+}
+
+#create_newPost
+{
+    display:flex ;
+    flex-direction: column;    
+}
+
+#fieldgroup
+{
+    display:flex;
+    flex-direction: column;
+}
+
+#titleInput
+{
+    width: 60%;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+}
+
+#writingInput
+{
+    width: 60%;
+    height: 300px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+}
+
+#publish
+{
+    display:flex;
+    justify-content:center;
+    width:60%;
+
+    background-color: yellow;
+}

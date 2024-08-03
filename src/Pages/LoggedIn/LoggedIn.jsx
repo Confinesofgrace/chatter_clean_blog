@@ -9,15 +9,13 @@ function LoggedIn () {
 
             <div id='logged-in-display'>
 
-                <div style={{width:'50%'}}>
+                <div style={{width:'60%'}}>
                     <BlogList/>
                 </div>
 
-                <div style={{width:'50%'}}>
+                <div style={{width:'40%'}}>
                     <Sidebar/>
                 </div>
-
-                
 
             </div>
 

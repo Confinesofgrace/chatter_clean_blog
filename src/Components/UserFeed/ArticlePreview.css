@@ -1,0 +1,12 @@
+#articlePreview-frame
+{
+    padding: 10px;
+
+    background-color: yellowgreen;
+}
+
+#articlePreview-image
+{
+    width: 20%;
+    background-color: whitesmoke;
+}

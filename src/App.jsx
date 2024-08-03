@@ -11,6 +11,7 @@ import SignUpWithEmail from "./Pages/SignUp/SignUpWithEmail";
 import LoggedIn from "./Pages/LoggedIn/LoggedIn";
 import BlogList from "./Components/UserFeed/BlogList";
 import Sidebar from "./Components/UserFeed/Sidebar";
+import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/loggedin" element= {<LoggedIn/>}/>
         <Route path="/bloglist" element= {<BlogList/>}/>
         <Route path="/sidebar" element= {<Sidebar/>}/>
+        <Route path="/createnewpost" element= {<CreateNewPost/>}/>
         
       </Routes>
 
