@@ -12,7 +12,8 @@ import LoggedIn from "./Pages/LoggedIn/LoggedIn";
 import BlogList from "./Components/UserFeed/BlogList";
 import Sidebar from "./Components/UserFeed/Sidebar";
 import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
-import Settings from "./Pages/Settings/Settings";
+import Settings from "./Pages/LoggedIn/Settings/Settings";
+import DefaultUserFeed from "./Pages/LoggedIn/UserFeed/DefaultUserFeed";
 
 
 
@@ -32,7 +33,8 @@ function App() {
         <Route path="/login" element= {<Login/>}/>
         <Route path="/signupwithemail" element= {<SignUpWithEmail/>}/>
         <Route path="/loginwithemail" element= {<LoginWithEmail/>}/>
-        <Route path="/loggedin" element= {<LoggedIn/>}/>
+        <Route path="/loggedin/*" element= {<LoggedIn/>}/>
+        <Route path="/defaultuserfeed" element= {<DefaultUserFeed/>}/>
         <Route path="/bloglist" element= {<BlogList/>}/>
         <Route path="/sidebar" element= {<Sidebar/>}/>
         <Route path="/createnewpost" element= {<CreateNewPost/>}/>

@@ -1,26 +1,17 @@
-import BlogList from '../../Components/UserFeed/BlogList';
-import Sidebar from '../../Components/UserFeed/Sidebar';
+import { Routes, Route } from 'react-router-dom';
 import './LoggedIn.css';
+import DefaultUserFeed from './UserFeed/DefaultUserFeed';
+import Settings from './Settings/Settings';
 
-function LoggedIn () {
-
-    return (
-        <div id='logged-in-frame'>
-
-            <div id='logged-in-display'>
-
-                <div style={{width:'60%'}}>
-                    <BlogList/>
-                </div>
-
-                <div style={{width:'40%'}}>
-                    <Sidebar/>
-                </div>
-
-            </div>
-
-        </div>
-    )
-};
+function LoggedIn() {
+  return (
+    <div id='logged-in-frame'>
+      <Routes>
+        <Route path="/" element={<DefaultUserFeed />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </div>
+  );
+}
 
 export default LoggedIn;

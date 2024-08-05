@@ -57,7 +57,7 @@ function Navbar2() {
                 <div id='loggedin-user'>
                     <IoMdNotificationsOutline size={20} style={{marginRight:'12px'}} />
 
-                    <NavLink to= "/settings">
+                    <NavLink to= "loggedin/settings">
                       <div id='profile-pic'>
                         <CgProfile size={20} />
 
