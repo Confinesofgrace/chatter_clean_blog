@@ -12,6 +12,7 @@ import LoggedIn from "./Pages/LoggedIn/LoggedIn";
 import BlogList from "./Components/UserFeed/BlogList";
 import Sidebar from "./Components/UserFeed/Sidebar";
 import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
+import Settings from "./Pages/Settings/Settings";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/bloglist" element= {<BlogList/>}/>
         <Route path="/sidebar" element= {<Sidebar/>}/>
         <Route path="/createnewpost" element= {<CreateNewPost/>}/>
+        <Route path="/settings" element= {<Settings/>}/>
         
       </Routes>
 

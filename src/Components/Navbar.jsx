@@ -8,7 +8,7 @@ function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
 
   useEffect(() => {
-    if (location.pathname === '/loggedin') {
+    if (location.pathname === '/loggedin' || location.pathname === '/createnewpost' ) {
       setShowNavbar(false);
     } else {
       setShowNavbar(true);
