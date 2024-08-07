@@ -14,6 +14,7 @@ import Sidebar from "./Components/UserFeed/Sidebar";
 import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
 import Settings from "./Pages/LoggedIn/Settings/Settings";
 import DefaultUserFeed from "./Pages/LoggedIn/UserFeed/DefaultUserFeed";
+import Interests from "./Components/Interests/Interests";
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/sidebar" element= {<Sidebar/>}/>
         <Route path="/createnewpost" element= {<CreateNewPost/>}/>
         <Route path="/settings" element= {<Settings/>}/>
+        <Route path="/interests" element= {<Interests/>}/>
         
       </Routes>
 

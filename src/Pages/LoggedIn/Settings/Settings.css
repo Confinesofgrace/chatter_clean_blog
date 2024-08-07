@@ -1,0 +1,43 @@
+#profile-update
+{
+    margin: 10px 0px;
+}
+
+#profile-update input
+{
+    outline: none;
+
+    width: 90%;
+}
+
+#change-profile-pic
+{
+    width:70px; 
+    height:70px;
+
+    border-radius:70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    background-color:whitesmoke;
+
+    cursor: pointer;
+}
+
+#updatesettings-btn
+{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 30px;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+    
+    background-color:rgba(162, 0, 255, 0.507);
+}
