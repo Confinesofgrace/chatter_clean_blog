@@ -29,3 +29,28 @@
 {
     background-color: #dcdcdc;
 }
+
+#interest-item.selected 
+{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#selected-interests-feedback 
+{
+    margin-top: 20px;
+}
+
+#selected-interests-feedback h4 
+{
+    margin-bottom: 10px;
+}
+
+#selected-interest-item 
+{
+    padding: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

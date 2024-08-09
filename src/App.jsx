@@ -15,6 +15,7 @@ import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
 import Settings from "./Pages/LoggedIn/Settings/Settings";
 import DefaultUserFeed from "./Pages/LoggedIn/UserFeed/DefaultUserFeed";
 import Interests from "./Components/Interests/Interests";
+import PreviewPost from "./Pages/CreateNewPost/PreviewPost";
 
 
 
@@ -41,6 +42,8 @@ function App() {
         <Route path="/createnewpost" element= {<CreateNewPost/>}/>
         <Route path="/settings" element= {<Settings/>}/>
         <Route path="/interests" element= {<Interests/>}/>
+        <Route path="/previewpost" element= {<PreviewPost/>}/>
+
         
       </Routes>
 

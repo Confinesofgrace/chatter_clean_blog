@@ -3,6 +3,7 @@ import './Settings.css';
 import Interests from '../../../Components/Interests/Interests';
 
 function Settings () {
+    
     return (
         <div id='settings-display' style={{display:'flex',}}>
 
