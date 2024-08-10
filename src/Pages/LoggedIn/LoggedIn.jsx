@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import './LoggedIn.css';
 import DefaultUserFeed from './UserFeed/DefaultUserFeed';
 import Settings from './Settings/Settings';
-import PreviewPost from '../CreateNewPost/PreviewPost';
+import PreviewPost from './PreviewPost';
 
 function LoggedIn() {
   return (

@@ -15,9 +15,7 @@ import CreateNewPost from "./Pages/CreateNewPost/CreateNewPost";
 import Settings from "./Pages/LoggedIn/Settings/Settings";
 import DefaultUserFeed from "./Pages/LoggedIn/UserFeed/DefaultUserFeed";
 import Interests from "./Components/Interests/Interests";
-import PreviewPost from "./Pages/CreateNewPost/PreviewPost";
-
-
+import PreviewPost from "./Pages/LoggedIn/PreviewPost";
 
 
 function App() {

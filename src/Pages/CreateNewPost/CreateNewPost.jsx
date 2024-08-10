@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoAddOutline } from 'react-icons/io5';
 import './CreateNewPost.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function CreateNewPost() {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
-    const [image, setImage] = useState(null);
-    const [wordCount, setWordCount] = useState(0);
+    const location = useLocation();
     const navigate = useNavigate();
+
+    const [title, setTitle] = useState(location.state?.title || '');
+    const [content, setContent] = useState(location.state?.content || '');
+    const [image, setImage] = useState(location.state?.image || null);
+    const [wordCount, setWordCount] = useState(0);
+
+    useEffect(() => {
+        if (content) {
+            setWordCount(content.split(' ').filter(word => word !== '').length);
+        }
+    }, [content]);
 
     const handleTitleChange = (e) => {
         setTitle(e.target.value);
@@ -26,11 +34,10 @@ function CreateNewPost() {
     };
 
     const handlePreview = () => {
-        navigate('/previewpost ', { state: { title, content, image } });
+        navigate('/loggedin/previewpost', { state: { title, content, image } });
     };
 
     const handlePublish = () => {
-        
         console.log("Publish clicked");
     };
 
@@ -64,8 +71,6 @@ function CreateNewPost() {
                             <label htmlFor="imageInput" style={{display:'flex', alignItems:'center'}}>
                                 <div style={{ backgroundColor: 'whitesmoke', margin: '10px 0px', padding: '10px', width: '40px', height: '40px', cursor: 'pointer', borderRadius:'6px' }}>
                                     <IoAddOutline size={20} style={{ cursor: 'pointer' }} />
-
-                                    
                                 </div>
                                 <p style={{marginLeft:'10px', fontSize:'14px', cursor:'pointer'}}>Insert post image</p>
                             </label>
