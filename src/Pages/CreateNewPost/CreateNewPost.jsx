@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { IoAddOutline } from 'react-icons/io5';
 import './CreateNewPost.css';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../Firebase/Firebase';
 
 function CreateNewPost() {
     const location = useLocation();
@@ -37,9 +39,15 @@ function CreateNewPost() {
         navigate('/loggedin/previewpost', { state: { title, content, image } });
     };
 
-    const handlePublish = () => {
+    const postCollectionRef = collection (db, "Posts")
+    const handlePublish = async () => {
+       await addDoc (postCollectionRef, {title, content, image});
+
+       navigate('/loggedin');
         console.log("Publish clicked");
     };
+
+
 
     return (
         <div id='createNewPost-frame'>

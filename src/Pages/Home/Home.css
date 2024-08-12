@@ -1,9 +1,9 @@
 #home-frame
 {
-    padding: 120px 40px 0px 40px;
+    padding: 120px 40px 120px 40px;
 
-    /*background-image: url(/src/assets/pexels-veeterzy-303383.jpg);*/
-    background-image: url(/src/assets/running.jpg);
+    background-image: url(/src/assets/pexels-veeterzy-303383.jpg);
+    /*background-image: url(/src/assets/running.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

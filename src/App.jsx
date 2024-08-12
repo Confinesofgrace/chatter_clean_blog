@@ -16,9 +16,13 @@ import Settings from "./Pages/LoggedIn/Settings/Settings";
 import DefaultUserFeed from "./Pages/LoggedIn/UserFeed/DefaultUserFeed";
 import Interests from "./Components/Interests/Interests";
 import PreviewPost from "./Pages/LoggedIn/PreviewPost";
+import { useState } from "react";
+import SignUpWithGoogle from "./Pages/SignUp/SignUpWithGoogle";
 
 
 function App() {
+
+  const [isAuth, setIsAuth] = useState (false); 
 
 
   return (
@@ -41,6 +45,8 @@ function App() {
         <Route path="/settings" element= {<Settings/>}/>
         <Route path="/interests" element= {<Interests/>}/>
         <Route path="/previewpost" element= {<PreviewPost/>}/>
+        <Route path="/signupwithgoogle" element= {<SignUpWithGoogle setIsAuth={setIsAuth}/>}/>
+
 
         
       </Routes>
