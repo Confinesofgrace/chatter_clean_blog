@@ -17,7 +17,7 @@ function Navbar2() {
     <div>
       <nav>
         <div id='nav-left'>
-          <NavLink to="/">
+          <NavLink to="/loggedin">
             <h1>Chatter</h1>
           </NavLink>
         </div>
@@ -27,14 +27,14 @@ function Navbar2() {
         </div>
 
         <div id='nav-center' className={isOpen ? 'open' : ''}>
-          <NavLink to="/">
+          <NavLink to="/loggedin">
             <div id='navs' onClick={toggleNavbar}>Home</div>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/loggedin/about">
             <div id='navs' onClick={toggleNavbar}>About</div>
           </NavLink>
-          <NavLink to="/contact">
-            <div id='navs' onClick={toggleNavbar}>Contact</div>
+          <NavLink to="/loggedin/myposts">
+            <div id='navs' onClick={toggleNavbar}>My Posts</div>
           </NavLink>
           <NavLink to="/createnewpost">
             <div id='navs' onClick={toggleNavbar}>Write</div>
