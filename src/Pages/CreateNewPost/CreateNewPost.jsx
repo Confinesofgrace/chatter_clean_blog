@@ -39,15 +39,22 @@ function CreateNewPost() {
         navigate('/loggedin/previewpost', { state: { title, content, image } });
     };
 
-    const postCollectionRef = collection (db, "Posts")
+   
     const handlePublish = async () => {
-       await addDoc (postCollectionRef, {title, content, image});
-
-       navigate('/loggedin');
-        console.log("Publish clicked");
+        try {
+            const docRef = await addDoc(collection(db, "Posts"), {
+                title,
+                content,
+                image
+            });
+            console.log("Document written with ID: ", docRef.id);
+            navigate('/loggedin/myposts');
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
     };
 
-
+    
 
     return (
         <div id='createNewPost-frame'>

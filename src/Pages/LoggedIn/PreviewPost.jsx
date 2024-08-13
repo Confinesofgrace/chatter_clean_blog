@@ -34,20 +34,20 @@ function PreviewPost () {
             
 
             <div id="title-preview" style={{ width:'60%', padding:'20px',}}>
-                <h2 style={{fontSize:'50px'}}>{title || 'Title for the post'}</h2>
+                <h2 style={{fontSize:'50px'}}>{title || 'Title for your post'}</h2>
             </div>
 
             <div id="image-preview" style={{width:'60%', display:'flex', justifyContent:'center', padding:'20px',}}>
             {image ? (
                     <img src={image} alt="Post" style={{ maxWidth: '100%', maxHeight: '400px' }} />
                 ) : (
-                    <p>Image for post</p>
+                    <p>Image for your post</p>
                 )}
 
             </div>
 
             <div id="body-preview" style={{ width:'60%', padding:'20px',}}>
-                <p style={{fontSize:'18px'}}>{content || 'Body of the post goes here'}</p>
+                <p style={{fontSize:'18px'}}>{content || 'Body of your post goes here'}</p>
 
             </div>
 

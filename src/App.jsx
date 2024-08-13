@@ -18,11 +18,16 @@ import Interests from "./Components/Interests/Interests";
 import PreviewPost from "./Pages/LoggedIn/PreviewPost";
 import { useState } from "react";
 import SignUpWithGoogle from "./Pages/SignUp/SignUpWithGoogle";
+import ReadPost from "./Pages/LoggedIn/ReadPost/ReadPost";
+import MyPosts from "./Pages/LoggedIn/MyPosts/MyPosts";
 
 
 function App() {
 
-  const [isAuth, setIsAuth] = useState (false); 
+  //const [isAuth, setIsAuth] = useState (false); 
+
+  // testing Google signup
+  //<Route path="/signupwithgoogle" element= {<SignUpWithGoogle setIsAuth={setIsAuth}/>}/>
 
 
   return (
@@ -45,7 +50,10 @@ function App() {
         <Route path="/settings" element= {<Settings/>}/>
         <Route path="/interests" element= {<Interests/>}/>
         <Route path="/previewpost" element= {<PreviewPost/>}/>
-        <Route path="/signupwithgoogle" element= {<SignUpWithGoogle setIsAuth={setIsAuth}/>}/>
+        
+        <Route path="/readpost" element= {<ReadPost/>}/>
+        <Route path="/myposts" element= {<MyPosts/>}/>
+
 
 
         
