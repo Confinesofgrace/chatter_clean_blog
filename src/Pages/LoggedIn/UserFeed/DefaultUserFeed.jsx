@@ -13,11 +13,11 @@ function DefaultUserFeed () {
 
                 }}>
 
-                <div style={{width:'60%'}}>
+                <div style={{width:'80%'}}>
                     <BlogList/>
                 </div>
 
-                <div style={{width:'40%'}}>
+                <div style={{width:'20%'}}>
                     <Sidebar/>
                 </div>
 

@@ -39,7 +39,7 @@ function MyPosts() {
                         borderRadius: '8px',
                         display: 'flex',
                         backgroundColor: 'whitesmoke',
-                        boxShadow: '0px 1px 8px rgba(14, 14, 13, 0.2)',
+                        boxShadow: '0px 4px 10px rgba(14, 14, 13, 0.055)',
                         cursor: 'pointer'
                     }}>
                     <div style={{ width: '70%', margin: '0px 10px' }}>

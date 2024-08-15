@@ -14,26 +14,38 @@ function BlogList() {
         setActiveFeed(feed);
     };
 
-    const handleForyouClick = () => {
-        setActiveFeed('forYou');
-    };
-
-    const handleMyPostClick = () => {
-        setActiveFeed('myPosts');
-    };
-
     return (
         <div>
             <div id='userFeed-nav'>
                 <NavLink to={'./interests'} state={{ selectedInterests }}>
-                    <div id='feed'> <IoAddOutline size={20} /></div>
+                    <div id='feed' className={activeFeed === 'forYou' ? 'active' : ''}>
+                        <IoAddOutline size={20} />
+                    </div>
                 </NavLink>
                 
-                <div id='feed' onClick={handleForyouClick}> For You</div>              
-                <div id='feed' onClick={handleMyPostClick}> My Posts </div>
+                <div 
+                    id='feed' 
+                    onClick={() => handleFeedClick('forYou')} 
+                    className={activeFeed === 'forYou' ? 'active' : ''}
+                >
+                    For You
+                </div>
+                
+                <div 
+                    id='feed' 
+                    onClick={() => handleFeedClick('myPosts')} 
+                    className={activeFeed === 'myPosts' ? 'active' : ''}
+                >
+                    My Posts
+                </div>
                 
                 {selectedInterests.map((interest, index) => (
-                    <div key={index} id='feed'>
+                    <div 
+                        key={index} 
+                        id='feed' 
+                        onClick={() => handleFeedClick(interest)} 
+                        className={activeFeed === interest ? 'active' : ''}
+                    >
                         {interest}
                     </div>
                 ))}
