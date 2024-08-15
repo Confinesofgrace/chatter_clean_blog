@@ -5,7 +5,7 @@ function Searchbar () {
     return (
         <div id='search-container'>
            
-            <BiSearch size={20}/>
+            <BiSearch size={20} style={{cursor:'pointer',}}/>
             <input id='search-input' placeholder= 'Search'/>
             
         </div>

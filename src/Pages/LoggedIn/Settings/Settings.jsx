@@ -35,9 +35,7 @@ function Settings () {
                         <input type='text' placeholder='Enter Username'/>
                     </div>
 
-                    <div id='profile-update'>
-                        <input type='email' placeholder='johnny@email.com'/>
-                    </div>
+                    
 
 
                     <div id='change-password'>

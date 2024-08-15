@@ -31,26 +31,28 @@ function PreviewPost () {
                 </NavLink>
                  
             </div>
+
+            <div id="previewpost-disply" style={{ width:'60%', padding:'20px',}}>
+
+                {image ? (
+                        <img src={image} alt="Post" style={{ objectFit: 'cover', width: '100%', maxHeight: '200px' }} />
+                    ) : (
+                        <p>Image for your post</p>
+                    )}
+
+
+                <div id="title-preview" >
+                    <h2 style={{fontSize:'50px'}}>{title || 'Title for your post'}</h2>
+                </div>
+
+                <div id="body-preview" >
+                    <p style={{fontSize:'18px'}}>{content || 'Body of your post goes here'}</p>
+
+                </div>
+
             
-
-            <div id="title-preview" style={{ width:'60%', padding:'20px',}}>
-                <h2 style={{fontSize:'50px'}}>{title || 'Title for your post'}</h2>
             </div>
-
-            <div id="image-preview" style={{width:'60%', display:'flex', justifyContent:'center', padding:'20px',}}>
-            {image ? (
-                    <img src={image} alt="Post" style={{ maxWidth: '100%', maxHeight: '400px' }} />
-                ) : (
-                    <p>Image for your post</p>
-                )}
-
-            </div>
-
-            <div id="body-preview" style={{ width:'60%', padding:'20px',}}>
-                <p style={{fontSize:'18px'}}>{content || 'Body of your post goes here'}</p>
-
-            </div>
-
+            
             
 
         </div>
