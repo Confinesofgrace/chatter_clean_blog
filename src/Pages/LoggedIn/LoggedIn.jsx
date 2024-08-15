@@ -7,6 +7,7 @@ import PreviewPost from './PreviewPost';
 import ReadPost from './ReadPost/ReadPost';
 import MyPosts from './MyPosts/MyPosts';
 import Interests from '../../Components/Interests/Interests';
+import Terms from '../Terms/Terms';
 
 function LoggedIn() {
   return (
@@ -19,6 +20,7 @@ function LoggedIn() {
         <Route path="/readpost" element={<ReadPost />} />
         <Route path="/myposts" element={<MyPosts />} />
         <Route path="/interests" element={<Interests />} />
+        <Route path="/terms" element={<Terms />} />
 
       </Routes>
     </div>

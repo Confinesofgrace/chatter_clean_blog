@@ -10,14 +10,18 @@ function DefaultUserFeed () {
                 {{
                     width: '100%',
                     display: 'flex',
+                    justifyContent:'center',
+                    gap:'50px',
 
                 }}>
 
-                <div style={{width:'80%'}}>
+                <div style={{width:'60%'}}>
                     <BlogList/>
                 </div>
 
-                <div style={{width:'20%'}}>
+                <hr ></hr>
+
+                <div style={{width:'25%'}}>
                     <Sidebar/>
                 </div>
 

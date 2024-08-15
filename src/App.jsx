@@ -20,6 +20,8 @@ import { useState } from "react";
 import SignUpWithGoogle from "./Pages/SignUp/SignUpWithGoogle";
 import ReadPost from "./Pages/LoggedIn/ReadPost/ReadPost";
 import MyPosts from "./Pages/LoggedIn/MyPosts/MyPosts";
+import Recommended from "./Components/Recommended/Recommended";
+import Terms from "./Pages/Terms/Terms";
 
 
 function App() {
@@ -53,6 +55,9 @@ function App() {
         
         <Route path="/readpost" element= {<ReadPost/>}/>
         <Route path="/myposts" element= {<MyPosts/>}/>
+        <Route path="/recommended" element= {<Recommended/>}/>
+        <Route path="/terms" element= {<Terms/>}/>
+
 
 
 
